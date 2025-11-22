@@ -1,0 +1,7 @@
+[core]
+    remote = mydrive
+
+['remote "mydrive"']
+    url = gdrive://147RUO2b0rIwdMsz9WyBfDqLMlPO74f87
+    gdrive_use_service_account = true
+    gdrive_service_account_json_path = mlops-a4-b8f89ec299d5.json
