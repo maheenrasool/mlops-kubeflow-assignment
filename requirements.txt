@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 mlflow
 dvc
 pandas
 scikit-learn
 numpy
 joblib
+=======
+kfp
+dvc
+scikit-learn
+pandas
+numpy
+joblib
+>>>>>>> 5b831e4f1fee31b5b43dc50cf1c026f8586d0bdb
