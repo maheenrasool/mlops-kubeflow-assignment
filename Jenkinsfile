@@ -8,12 +8,12 @@ pipeline {
                 echo 'Setting up environment'
                 checkout scm
 
-                sh '''
+                bat """
                 python -m venv venv
-                . venv/bin/activate
-                pip install --upgrade pip
+                call venv\\Scripts\\activate
+                python -m pip install --upgrade pip
                 pip install -r requirements.txt
-                '''
+                """
             }
         }
 
@@ -21,11 +21,11 @@ pipeline {
             steps {
                 echo 'Checking pipeline script for syntax errors'
 
-                sh '''
-                . venv/bin/activate
+                bat """
+                call venv\\Scripts\\activate
                 python -m py_compile src/pipeline.py
                 python -m py_compile src/pipeline_components.py
-                '''
+                """
             }
         }
 
@@ -33,10 +33,10 @@ pipeline {
             steps {
                 echo 'Running ML pipeline to verify workflow'
 
-                sh '''
-                . venv/bin/activate
+                bat """
+                call venv\\Scripts\\activate
                 python src/pipeline.py
-                '''
+                """
             }
         }
     }
