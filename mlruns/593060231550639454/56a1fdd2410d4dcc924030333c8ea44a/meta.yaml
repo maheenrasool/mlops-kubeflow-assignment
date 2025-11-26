@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/mahee/Downloads/mlops-kubeflow-assignment/mlruns/593060231550639454/56a1fdd2410d4dcc924030333c8ea44a/artifacts
+end_time: 1764188243556
+entry_point_name: ''
+experiment_id: '593060231550639454'
+lifecycle_stage: active
+run_id: 56a1fdd2410d4dcc924030333c8ea44a
+run_name: incongruous-bat-8
+run_uuid: 56a1fdd2410d4dcc924030333c8ea44a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764188241588
+status: 3
+tags: []
+user_id: mahee

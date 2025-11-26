@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/mahee/Downloads/mlops-kubeflow-assignment/mlruns/593060231550639454/c31ea912bab946a593450f30c938627b/artifacts
+end_time: 1764187946012
+entry_point_name: ''
+experiment_id: '593060231550639454'
+lifecycle_stage: active
+run_id: c31ea912bab946a593450f30c938627b
+run_name: able-grub-801
+run_uuid: c31ea912bab946a593450f30c938627b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764187944313
+status: 3
+tags: []
+user_id: mahee

@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/mahee/Downloads/mlops-kubeflow-assignment/mlruns/593060231550639454
+creation_time: 1764187260097
+experiment_id: '593060231550639454'
+last_update_time: 1764187260097
+lifecycle_stage: active
+name: MLflow Housing Pipeline

@@ -1,0 +1,33 @@
+name: Extract data
+inputs:
+- {name: dataset_dvc_path, type: String}
+- {name: output_path, type: String}
+implementation:
+  container:
+    image: python:3.8
+    command:
+    - sh
+    - -ec
+    - |
+      program_path=$(mktemp)
+      printf "%s" "$0" > "$program_path"
+      python3 -u "$program_path" "$@"
+    - |
+      def extract_data(dataset_dvc_path, output_path):
+          os.makedirs(os.path.dirname(output_path), exist_ok=True)
+          subprocess.run([
+              "dvc", "get", ".", dataset_dvc_path, "-o", output_path
+          ], check=True)
+
+      import argparse
+      _parser = argparse.ArgumentParser(prog='Extract data', description='')
+      _parser.add_argument("--dataset-dvc-path", dest="dataset_dvc_path", type=str, required=True, default=argparse.SUPPRESS)
+      _parser.add_argument("--output-path", dest="output_path", type=str, required=True, default=argparse.SUPPRESS)
+      _parsed_args = vars(_parser.parse_args())
+
+      _outputs = extract_data(**_parsed_args)
+    args:
+    - --dataset-dvc-path
+    - {inputValue: dataset_dvc_path}
+    - --output-path
+    - {inputValue: output_path}

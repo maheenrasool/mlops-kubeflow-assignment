@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/mahee/Downloads/mlops-kubeflow-assignment/mlruns/593060231550639454/7ff59ed5797e40e691d731e27fd02779/artifacts
+end_time: 1764187550758
+entry_point_name: ''
+experiment_id: '593060231550639454'
+lifecycle_stage: active
+run_id: 7ff59ed5797e40e691d731e27fd02779
+run_name: whimsical-wren-618
+run_uuid: 7ff59ed5797e40e691d731e27fd02779
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764187548707
+status: 3
+tags: []
+user_id: mahee

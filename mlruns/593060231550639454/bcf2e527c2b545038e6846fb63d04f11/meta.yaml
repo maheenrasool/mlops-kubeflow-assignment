@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/mahee/Downloads/mlops-kubeflow-assignment/mlruns/593060231550639454/bcf2e527c2b545038e6846fb63d04f11/artifacts
+deleted_time: 1764187602587
+end_time: 1764187261781
+entry_point_name: ''
+experiment_id: '593060231550639454'
+lifecycle_stage: deleted
+run_id: bcf2e527c2b545038e6846fb63d04f11
+run_name: kindly-wolf-897
+run_uuid: bcf2e527c2b545038e6846fb63d04f11
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764187261471
+status: 4
+tags: []
+user_id: mahee

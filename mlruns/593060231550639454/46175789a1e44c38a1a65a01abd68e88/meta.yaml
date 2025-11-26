@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/mahee/Downloads/mlops-kubeflow-assignment/mlruns/593060231550639454/46175789a1e44c38a1a65a01abd68e88/artifacts
+deleted_time: 1764187602583
+end_time: 1764187478545
+entry_point_name: ''
+experiment_id: '593060231550639454'
+lifecycle_stage: deleted
+run_id: 46175789a1e44c38a1a65a01abd68e88
+run_name: unequaled-wren-970
+run_uuid: 46175789a1e44c38a1a65a01abd68e88
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764187476966
+status: 4
+tags: []
+user_id: mahee
