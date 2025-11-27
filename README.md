@@ -29,6 +29,7 @@ Model Evaluation (RMSE, MAE logged to MLflow)
 Artifact Logging (model saved to MLflow registry)
 
 Project Structure
+```
 mlops-mlflow-assignment/
 │
 ├── data/
@@ -47,43 +48,51 @@ mlops-mlflow-assignment/
 ├── .gitignore
 └── .github/workflows/mlops.yml  # CI/CD pipeline
 
+```
+
 Setup Instructions
 1. Clone the repository
+```
 git clone https://github.com/<your-username>/mlops-mlflow-assignment.git
 cd mlops-mlflow-assignment
+```
 
-2. Install dependencies
+3. Install dependencies
 
 Using pip:
-
+```
 pip install -r requirements.txt
-
+```
 3. Set up DVC
 
 Initialize and pull the dataset:
-
+```
 dvc pull
-
+```
 
 This downloads the dataset from the configured DVC remote storage.
 
 4. Run the MLflow Pipeline
 Option A → Run using MLflow CLI
+```
 mlflow run .
-
+```
 Option B → Run manually
-python mlflow_pipeline.py
+```
+python pipeline.py
+```
 
 5. View MLflow Dashboard
 
 Start MLflow UI:
-
+```
 mlflow ui
-
+```
 
 Open:
+```
   http://127.0.0.1:5000
-
+```
 You will see:
 
 Model versions
@@ -101,12 +110,6 @@ A complete CI/CD workflow runs automatically:
 ✔ Runs MLflow experiment
 ✔ Ensures repo is production-ready
 
-Workflow file:
-
-.github/workflows/mlops.yml
-
-
-Manual execution also works from GitHub Actions → Run Workflow.
 
 Pipeline Steps
 1. Data Extraction
@@ -142,22 +145,9 @@ Metrics logged automatically.
 
 Boston Housing Dataset
 
-Docker Support (Optional)
-
-Build the container:
-
-docker build -t mlops-pipeline .
-
-
-Run the pipeline:
-
-docker run mlops-pipeline
-
 Technologies Used
 Tool	Purpose
 DVC	Data versioning
 MLflow	Experiment tracking & model logging
-GitHub Workflows	CI/CD
 Python	Core implementation
 Scikit-learn	ML model
-Docker	Containerization
